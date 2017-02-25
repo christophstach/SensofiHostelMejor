@@ -1,0 +1,63 @@
+$time: 0.5s;
+$degree: 720deg;
+
+.social-menu {
+  a {
+    border: 1px solid silver;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: $silver;
+    font-size: 1.5rem;
+    //margin: 0 5px;
+
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: all $time ease 0s;
+    -moz-transition: all $time ease 0s;
+    -webkit-transition: all $time ease 0s;
+    -ms-transition: all $time ease 0s;
+    -o-transition: all $time ease 0s;
+
+    &:link {}
+    &:visited {}
+    &:active {}
+    &:hover {
+      text-decoration: none;
+
+      transform: scale(1.1) rotate(720deg);
+      -webkit-transform: scale(1.1) rotate(720deg);
+      -moz-transform: scale(1.1) rotate(720deg);
+      -ms-transform: scale(1.1) rotate(360deg);
+      -o-transform: scale(1.1) rotate(360deg);
+    }
+  }
+
+  .facebook:hover{
+    border: 2px solid #db4437;
+    background: #db4437;
+  }
+
+  .twitter:hover{
+    border: 2px solid #1da1f2;
+    background: #1da1f2;
+  }
+
+  .youtube:hover{
+    border: 2px solid #cc181e;
+    background: #cc181e;
+  }
+
+  .instagram:hover{
+    border: 2px solid #c54276;
+    background: #c54276;
+  }
+
+  .google-plus:hover{
+    border: 2px solid #db4437;
+    background: #db4437;
+  }
+}
